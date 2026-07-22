@@ -11,6 +11,7 @@ RUN rm -rf /usr/local/tomcat/webapps/ROOT
 RUN useradd -m adha
 
 # Copy your JAR file into the webapps directory
+# Copy your JAR file into the webapps directory
 COPY ./target/adha*.jar /usr/local/tomcat/webapps/
 
 # Expose the default Tomcat port
